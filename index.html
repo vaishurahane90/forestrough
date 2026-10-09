@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Rouge | Food & Restaurant</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        /* Extra styling for rich home sections */
+        .hero {
+            min-height: 600px;
+           background: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.60)), url("../images/hero.jpeg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            color: white;
+        }
+        .hero-image-box img {
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+}
+        .hero-content { max-width: 650px; }
+        .welcome { letter-spacing: 5px; font-size: 15px; color: #f2d36b; margin-bottom: 15px; }
+        .hero h1 { font-size: 70px; line-height: 1.05; margin-bottom: 20px; }
+        .hero h1 span { color: #f3cd55; }
+        .tagline { font-size: 25px; margin-bottom: 20px; }
+        .hero p { font-size: 18px; line-height: 1.7; max-width: 550px; margin-bottom: 30px; }
+        .menu-btn { display: inline-block; background: #f3cf5b; color: #182719; padding: 16px 30px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 17px; }
+
+        /* Feature Cards */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            text-align: center;
+        }
+        .card:hover { transform: translateY(-8px); }
+        .card h3 { margin-bottom: 12px; color: #174b35; font-size: 20px; }
+        .card p { color: #666; line-height: 1.6; font-size: 15px; }
+
+        /* Quality Commitment Banner Section */
+        .quality-banner {
+            background: #173d2c;
+            color: white;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .quality-banner text { flex: 1; }
+        .quality-banner h2 { font-size: 38px; margin-bottom: 15px; color: #f3cd55; }
+        .quality-banner p { font-size: 17px; line-height: 1.8; color: #dfede4; }
+        
+
+        @media (max-width: 900px) {
+            .features { grid-template-columns: repeat(2, 1fr); }
+            .hero h1 { font-size: 45px; }
+            .quality-banner { flex-direction: column; text-align: center; }
+        }
+        @media (max-width: 600px) {
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DYNAMIC NAVBAR PLACEHOLDER -->
+    <div id="nav-placeholder"></div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <main>
+
+        <!-- SECTION 1: HERO SECTION -->
+        <header class="hero">
+            <div class="hero-content">
+                <div class="welcome">WELCOME TO</div>
+                <h1>Forest <span>Rouge</span></h1>
+                <div class="tagline">Good Food | Great Vibes | Together</div>
+                <p>
+                    At Forest Rouge, we serve more than just food. We create memorable experiences with delicious
+                    flavours, exceptional product quality, and warm hospitality.
+                </p>
+                <a href="menu.html" class="menu-btn">Explore Our Menu →</a>
+            </div>
+            
+            
+        </header>
+
+        <!-- SECTION 2: CORE SERVICES / PILLARS -->
+        <section class="section">
+            <span style="color: #c99a32; font-weight: bold; letter-spacing: 2px;">WHAT WE OFFER</span>
+            <h2 class="section-title">Our Pillars of Excellence</h2>
+            <p class="section-text">
+                Everything we do is focused on high-grade product standards and total customer satisfaction.
+            </p>
+
+            <div class="features">
+                <div class="card">
+                    <h3>Quality Food</h3>
+                    <p>Delicious, perfectly crafted dishes made to satisfy your tastebuds every time.</p>
+                </div>
+                <div class="card">
+                    <h3>Fresh Ingredients</h3>
+                    <p>Strict selection of fresh produce to guarantee rich and authentic flavor profiles.</p>
+                </div>
+                <div class="card">
+                    <h3>Restaurant Service</h3>
+                    <p>Professional, friendly hospitality ensuring a comfortable environment for your family.</p>
+                </div>
+                <div class="card">
+                    <h3>Customer Care</h3>
+                    <p>Your dining comfort and feedback remain our primary core operational priorities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: QUALITY COMMITMENT HIGHLIGHT BANNER -->
+        <section class="quality-banner">
+            <div>
+                <h2>Uncompromising Product Quality</h2>
+                <p>
+                    We source our raw ingredients from trusted local producers who meet rigorous standards of freshness and purity. 
+                    At Forest Rouge, food safety, precise culinary technique, and great taste go hand in hand.
+                </p>
+            </div>
+            <div>
+                <a href="about_us.html" style="background: #f3cf5b; color: #173d2c; padding: 14px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; display: inline-block;">Learn Our Story →</a>
+            </div>
+        </section>
+
+        <!-- SECTION 4: MENU SNEAK PEEK -->
+        <section class="section">
+            <span style="color: #c99a32; font-weight: bold; letter-spacing: 2px;">TASTE THE DIFFERENCE</span>
+            <h2 class="section-title">Featured Specialties</h2>
+            <p class="section-text">
+                A quick glimpse at some of our crowd-favorite culinary creations and refreshments.
+            </p>
+            <br>
+            <a href="menu.html" class="menu-btn" style="background: #17633f; color: white;">View Full Menu Selection →</a>
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- TEMPLATE INJECTION SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("navbar.html").then(res => res.text()).then(data => document.getElementById("nav-placeholder").innerHTML = data);
+            fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-placeholder").innerHTML = data);
+        });
+    </script>
+
+</body>
+</html>

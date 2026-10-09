@@ -1,0 +1,200 @@
+/* ==========================================
+   FOREST ROUGE - MASTER STYLESHEET
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f7f1;
+    color: #173d2c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Pushes footer down if content is short */
+}
+
+/* NAVBAR */
+nav {
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #174b35;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.logo-item {
+    display: inline-block;
+}
+
+.logo img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.logo span {
+    color: #c99a32;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #197044;
+    font-weight: bold;
+}
+
+.book-btn {
+    background: #17633f;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: #124d31;
+}
+
+/* GENERAL SECTIONS */
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #174b35;
+}
+
+.section-text {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+/* ABOUT PAGE SPECIFIC STYLES */
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/hero.jpeg") center/cover no-repeat;
+    padding: 100px 8%;
+    text-align: center;
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.about-hero h1 span {
+    color: #f3cd55;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    padding: 80px 8%;
+    background: white;
+}
+
+.about-text-content h2 {
+    font-size: 36px;
+    color: #174b35;
+    margin-bottom: 20px;
+}
+
+.about-text-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.about-image-wrapper img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* CONTACT CONTAINER (Inside Footer) */
+.contact {
+    background: #173d2c;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contact p {
+    margin: 8px;
+    font-size: 16px;
+    color: #dfede4;
+}
+
+/* FOOTER */
+footer {
+    background: #10291f;
+    color: #ddd;
+    text-align: center;
+}
+
+.footer-bottom {
+    padding: 20px;
+    background: #0b1d15;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 50px 5%;
+    }
+}

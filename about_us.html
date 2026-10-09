@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Rouge | About Us</title>
+    <!-- Link to Master Stylesheet -->
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+
+    <!-- DYNAMIC NAVBAR PLACEHOLDER -->
+    <div id="nav-placeholder"></div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <main>
+        
+        <!-- About Page Header Banner -->
+        <header class="about-hero">
+            <h1>About <span>Forest Rouge</span></h1>
+            <p>Discover our journey, our passion, and our dedication to fine dining.</p>
+        </header>
+
+        <!-- Our Story / Core Values Section -->
+        <section class="about-grid">
+            <div class="about-text-content">
+                <span style="color: #c99a32; font-weight: bold; letter-spacing: 2px;">ESTABLISHED FOR QUALITY</span>
+                <h2>Crafting Culinary Excellence Every Single Day</h2>
+                <p>
+                    Welcome to <strong>Forest Rouge</strong>, where food meets art. Founded with a deep love for rich flavors, 
+                    fresh ingredients, and warm hospitality, our restaurant is designed to offer a peaceful yet luxurious escape from the routine of daily life.
+                </p>
+                <p>
+                    We believe that exceptional service and high-grade product quality are the cornerstones of a great dining experience. 
+                    From our hand-picked ingredients to our carefully trained culinary team, everything we do is focused on bringing joy to your table.
+                </p>
+            </div>
+            <div class="about-image-wrapper">
+                <img src="images/gallary2.jpeg" alt="Forest Rouge Restaurant Ambiance">
+            </div>
+        </section>
+
+        <!-- Quality Commitment Highlight -->
+        <section class="section">
+            <h2 class="section-title">Why Dine With Us?</h2>
+            <p class="section-text">
+                We maintain strict standards for hygiene, ingredient freshness, and customer satisfaction. Whether you are dropping by 
+                for a quick mocktail, a rich family dinner, or a celebration, Forest Rouge promises an unforgettable taste experience.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- TEMPLATE INJECTION SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Automatically inject navbar.html
+            fetch("navbar.html")
+                .then(response => response.text())
+                .then(data => { 
+                    document.getElementById("nav-placeholder").innerHTML = data; 
+                    // Highlight current page active link if desired
+                });
+
+            // Automatically inject footer.html
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(data => { 
+                    document.getElementById("footer-placeholder").innerHTML = data; 
+                });
+        });
+    </script>
+
+</body>
+</html>

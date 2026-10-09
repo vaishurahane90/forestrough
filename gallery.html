@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Rouge | Gallery</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        /* Gallery grid configuration */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 50px 8%;
+        }
+        .gallery-item {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #174b35;
+        }
+        @media (max-width: 900px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DYNAMIC NAVBAR PLACEHOLDER -->
+    <div id="nav-placeholder"></div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <main>
+        
+        <!-- Gallery Header Banner -->
+        <header class="about-hero">
+            <h1>Our Photo <span>Gallery</span></h1>
+            <p>A visual look into our delicious cuisine, ingredients, and restaurant experience.</p>
+        </header>
+
+        <!-- Gallery Image Grid Section -->
+        <section>
+            <div class="gallery-grid">
+                
+                <div class="gallery-item">
+                    <img src="images/biryani.jpeg" alt="Quality Food">
+                    <div class="gallery-caption">Exquisite Quality Dishes</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gallary1.jpeg" alt="Restaurant Vibe">
+                    <div class="gallery-caption">Customer Care & Hospitality</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gallary2.jpeg" alt="Dining Service">
+                    <div class="gallery-caption">Warm Restaurant Ambiance</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/gallary3.jpeg" alt="Fresh Ingredients">
+                    <div class="gallery-caption">Fresh Select Ingredients</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/drinks.jpeg" alt="Mocktails">
+                    <div class="gallery-caption">Refreshing Mocktails</div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/dessert.jpeg" alt="Desserts">
+                    <div class="gallery-caption">Delectable Desserts</div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- TEMPLATE INJECTION SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("navbar.html").then(res => res.text()).then(data => document.getElementById("nav-placeholder").innerHTML = data);
+            fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-placeholder").innerHTML = data);
+        });
+    </script>
+
+</body>
+</html>

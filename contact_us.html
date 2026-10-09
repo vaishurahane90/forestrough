@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Rouge | Contact Us</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .contact-page-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            padding: 80px 8%;
+            background: white;
+            align-items: flex-start;
+        }
+        .contact-info-box h2, .contact-form-box h2 {
+            font-size: 32px;
+            color: #174b35;
+            margin-bottom: 20px;
+        }
+        .contact-info-box p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        .info-item {
+            margin-bottom: 15px;
+            font-size: 17px;
+            color: #173d2c;
+            font-weight: bold;
+        }
+        .contact-form-box form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 15px;
+            background: #fdfdfd;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 120px;
+        }
+        .submit-btn {
+            background: #17633f;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .submit-btn:hover {
+            background: #124d31;
+        }
+        @media (max-width: 900px) {
+            .contact-page-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- DYNAMIC NAVBAR PLACEHOLDER -->
+    <div id="nav-placeholder"></div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <main>
+        
+        <!-- Header Banner -->
+        <header class="about-hero">
+            <h1>Contact <span>Forest Rouge</span></h1>
+            <p>Get in touch with us for table reservations, events, or inquiries.</p>
+        </header>
+
+        <!-- Contact Section Grid -->
+        <section class="contact-page-container">
+            
+            <!-- Left Info Box -->
+            <div class="contact-info-box">
+                <span style="color: #c99a32; font-weight: bold; letter-spacing: 2px;">REACH OUT TO US</span>
+                <h2>We Would Love to Hear From You</h2>
+                <p>
+                    Whether you want to book a table for a family gathering, inquire about our organic food preparation, 
+                    or share feedback, our doors and lines are always open.
+                </p>
+                
+                <div class="info-item">📧 Email: forestrouge.pune@gmail.com</div>
+                <div class="info-item">🍴 Category: Food & Restaurant Services</div>
+                <div class="info-item">⏰ Timings: 11:00 AM – 11:00 PM (All Days)</div>
+                <div class="info-item">📍 Location: Pune, Maharashtra</div>
+            </div>
+
+            <!-- Right Booking / Inquiry Form Box -->
+            <div class="contact-form-box">
+                <h2>Book a Table / Send Message</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message or Special Requirements (e.g., Table for 4 at 8 PM)"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Reservation →</button>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- DYNAMIC FOOTER PLACEHOLDER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- TEMPLATE INJECTION SCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("navbar.html").then(res => res.text()).then(data => document.getElementById("nav-placeholder").innerHTML = data);
+            fetch("footer.html").then(res => res.text()).then(data => document.getElementById("footer-placeholder").innerHTML = data);
+        });
+    </script>
+
+</body>
+</html>
