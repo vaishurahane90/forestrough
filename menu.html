@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forest Rouge | Menu</title>
     <link rel="stylesheet" href="css/master.css">
-    <!-- Link to your existing menu CSS if you have specialized rules -->
     <link rel="stylesheet" href="css/Menu.css">
 </head>
 <body>
@@ -23,56 +22,61 @@
         </header>
 
         <!-- Dine Menu Section -->
-        <section class="section" id="menu">
-            <div class="dine-menu-container">
+        <section class="section" id="menu" style="padding: 60px 20px; background-color: #faf9f6;">
+            <div class="dine-menu-container" style="max-width: 1200px; margin: 0 auto;">
               
+              <!-- Section Header -->
               <div class="menu-header" style="text-align: center; margin-bottom: 50px;">
-                <span class="sub-title" style="color: #c99a32; font-weight: bold; letter-spacing: 2px;">TASTE THE QUALITY</span>
-                <h2 class="main-title" style="font-size: 38px; color: #174b35; margin-top: 10px;">Featured Dishes & Drinks</h2>
-                <p class="description" style="color: #666; margin-top: 10px;">Prepared fresh daily to guarantee ultimate flavor and satisfaction.</p>
+                <span class="sub-title" style="color: #c99a32; font-weight: 700; letter-spacing: 3px; font-size: 14px; text-transform: uppercase;">Taste The Quality</span>
+                <h2 class="main-title" style="font-size: 40px; color: #174b35; margin-top: 10px; font-family: serif;">Featured Dishes & Drinks</h2>
+                <p class="description" style="color: #666; margin-top: 10px; font-size: 16px;">Prepared fresh daily to guarantee ultimate flavor and satisfaction.</p>
               </div>
 
-              <!-- Menu Cards Grid -->
-              <div class="features" style="grid-template-columns: repeat(4, 1fr); gap: 25px; margin-top: 30px;">
+              <!-- Menu Cards Grid (Vertical Form) -->
+              <div class="features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; margin-top: 30px;">
                 
                 <!-- Card 1 -->
-                <div class="card">
-                  <div class="card-img-wrapper" style="margin-bottom: 15px;">
-                    <img src="images/drinks.jpeg" alt="Mocktails" style="width:20%; height:160px; object-fit:cover; border-radius:10px;">
+                <div class="card" style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';">
+                  <div class="card-img-wrapper" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="images/drinks.jpeg" alt="Mocktails" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';">
                   </div>
-                  <h3>Mocktails</h3>
-                  <p>Fresh, refreshing custom-blended mocktails.</p>
-                  <strong style="display:block; margin-top:10px; color:#c99a32; font-size:18px;">&#8377;199</strong>
+                  <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; text-align: left;">
+                    <h3 style="margin: 0 0 10px 0; color: #174b35; font-size: 22px; font-family: serif;">Mocktails</h3>
+                    <p style="margin: 0; color: #666; font-size: 15px; line-height: 1.5;">Fresh, refreshing custom-blended mocktails to uplift your day.</p>
+                  </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="card">
-                  <div class="card-img-wrapper" style="margin-bottom: 15px;">
-                    <img src="images/paneer.jpeg" alt="Paneer Butter Masala" style="width:20%; height:160px; object-fit:cover; border-radius:10px;">
+                <div class="card" style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';">
+                  <div class="card-img-wrapper" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="images/paneer.jpeg" alt="Paneer Butter Masala" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';">
                   </div>
-                  <h3>Paneer Butter Masala</h3>
-                  <p>Chef's special rich preparation.</p>
-                  <strong style="display:block; margin-top:10px; color:#c99a32; font-size:18px;">&#8377;349</strong>
+                  <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; text-align: left;">
+                    <h3 style="margin: 0 0 10px 0; color: #174b35; font-size: 22px; font-family: serif;">Paneer Butter Masala</h3>
+                    <p style="margin: 0; color: #666; font-size: 15px; line-height: 1.5;">Chef's special rich preparation cooked in aromatic buttery gravy.</p>
+                  </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card">
-                  <div class="card-img-wrapper" style="margin-bottom: 15px;">
-                    <img src="images/salad.jpeg" alt="Veg Salad" style="width:20%; height:160px; object-fit:cover; border-radius:10px;">
+                <div class="card" style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';">
+                  <div class="card-img-wrapper" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="images/salad.jpeg" alt="Veg Salad" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';">
                   </div>
-                  <h3>Veg Salad</h3>
-                  <p>Crisp, organic restaurant specialty greens.</p>
-                  <strong style="display:block; margin-top:10px; color:#c99a32; font-size:18px;">&#8377;299</strong>
+                  <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; text-align: left;">
+                    <h3 style="margin: 0 0 10px 0; color: #174b35; font-size: 22px; font-family: serif;">Veg Salad</h3>
+                    <p style="margin: 0; color: #666; font-size: 15px; line-height: 1.5;">Crisp, organic restaurant specialty greens tossed with savory dressings.</p>
+                  </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="card">
-                  <div class="card-img-wrapper" style="margin-bottom: 15px;">
-                    <img src="images/dessert.jpeg" alt="Gulab Jamun" style="width:20%; height:160px; object-fit:cover; border-radius:10px;">
+                <div class="card" style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(0,0,0,0.1)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.06)';">
+                  <div class="card-img-wrapper" style="width: 100%; height: 200px; overflow: hidden;">
+                    <img src="images/dessert.jpeg" alt="Gulab Jamun" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.08)';" onmouseout="this.style.transform='scale(1)';">
                   </div>
-                  <h3>Gulab Jamun</h3>
-                  <p>Sweet, warm finish to your meal.</p>
-                  <strong style="display:block; margin-top:10px; color:#c99a32; font-size:18px;">&#8377;149</strong>
+                  <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1; text-align: left;">
+                    <h3 style="margin: 0 0 10px 0; color: #174b35; font-size: 22px; font-family: serif;">Gulab Jamun</h3>
+                    <p style="margin: 0; color: #666; font-size: 15px; line-height: 1.5;">Sweet, warm melt-in-your-mouth finish to your wonderful meal.</p>
+                  </div>
                 </div>
 
               </div>
